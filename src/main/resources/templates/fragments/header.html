@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      th:with="lang=${#locale.language}" th:lang="${lang}" lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <title>Title</title>
+</head>
+<body>
+<header th:fragment="header">
+    <div id="nav" class="menu">
+		<a th:href="@{/home}">Home</a>
+		<a th:href="@{/aboutMe}">About Me</a>
+		<a href="#">Link1</a>
+		<a href="#">Link2</a>		
+	</div>
+	
+	<div>
+		<ul>
+		  <li><a href="https://github.com/nveronica">GitHub</a></li>
+		  <li><a href="https://www.linkedin.com/in/nagy-veronika/">LinkedIn</a></li>
+		  <li><a th:href="@{/receipts}">REST api example with H2 database</a></li>
+		</ul>
+	</div>
+</header>
+
+</body>
+</html>

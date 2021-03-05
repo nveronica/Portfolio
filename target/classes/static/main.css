@@ -1,28 +1,30 @@
-/*
-I would like to know why you need to change the background image of a list item on mouse over.
-If you want that the list item act like a link - or,
-in general, if you want assign an action to the list item - 
-you should add an <a> tag inside the <li>,
-and use the a:hover css selector to assign the background image of the link on mouse over. 
-In this way you don't need any javascript function.
-If you can't use an <a> tag I would like to know why.
-*/
-div.menu a{
-  background-color: #704c87;
-  overflow: auto;
-  white-space: nowrap;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+#myMenu.menu a {
+	border-width: 20px;
+}
 
+div.menu a {
+	background-color: #704c87;
+	color: white;
+	overflow: auto;
+	white-space: nowrap;
+	display: inline-block;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	width: 75px;
+	border-style: solid;
+	border-radius: 10px;
+	border-image: url("/images/tile1Pink.jpg") 30 round;
+	background-image: url("/images/whiteTile.jpg");
+	/*#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+  
+}*/
 }
 
 div.menu a:hover {
- /* background-color: #704c8787;*/
-  background-image: url("/images/whiteTile.jpg");
-  overflow: auto;
-  white-space: nowrap;
-  
+	/* background-color: #704c8787;*/
+	overflow: auto;
+	white-space: nowrap;
 }
